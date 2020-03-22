@@ -42,7 +42,7 @@ export default {
     return {
       cards: {
         dreamcloud: {
-          title: 'Dreamcloud',
+          title: 'dreamcloud',
           img: 'dc',
           description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
           website: 'https://dreamcloud.netlify.com',
@@ -50,7 +50,7 @@ export default {
           about: ''
         },
         spirals: {
-          title: 'Green all on the square',
+          title: 'SpiralRealm',
           img: 'green',
           description: 'Take a break and lose yourself in the spiral.',
           website: 'https://frosty-payne-c18919.netlify.com/',
