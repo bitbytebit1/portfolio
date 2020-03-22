@@ -427,20 +427,59 @@ export default {
           super({ cloud, time })
           this.newWord = true
           this.name = 'Words'
-          this.wordIndex = -1
+          this.firstRun = false
+          // this.wordIndex = -1
         }
 
         static get quotes () {
-          return ['Tristan Bemert', 'Portfolio', 'BitByteBit', 'You never fall if you never fight', 'It happens faster than you could ever think',  'from always and forever to never again', 'in less than a blink.', 'and yet; this too shall pass']
+          return [
+            'BitByteBit', 
+
+            // EYEDEA
+            'you never fall if you never fight', 
+
+            // MATRIX
+            'knock knock', 
+            'what is real?', 
+            // 'free your mind', 
+            'wake up', 
+            // 'déjà vu', 
+
+            // ISAAC ASIMOV
+            'in life, unlike chess, the game continues after checkmate', 
+            'self-education is, I firmly believe, the only kind of education there is', 
+            'the only function of a school is to make self-education easier; failing that, it does nothing', 
+            'people think of education as something that they can finish', 
+            'to succeed, planning alone is insufficient, one must improvise as well',
+
+            // GEORGE ORWELL
+
+            // PHILIP K. DICK
+            'mors certa, vita incerta', 
+            'do androids dream of electric sheep?', 
+
+            // Iain M. Banks
+            'of course I still love you', 
+
+            // HITCHIKERS
+            'forty two', 
+            'heart of gold', 
+          ]
+          // return ['BitByteBit', 'it happens faster than you could ever think',  'from always and forever to never again', 'in less than a blink', 'this too shall pass', 'you never fall if you never fight', 'Knock knock', 'Déjà vu', 'What is real?']
         }
 
         draw () {
           p.background(0, 0, 0)
-
+          let quote
           if (this.newWord) {
-            this.wordIndex = (this.wordIndex < Words.quotes.length - 1 ? this.wordIndex + 1 : 0)
-            const quote = Words.quotes[this.wordIndex]
-            // const quote = _.sample(Words.quotes)
+            if (this.firstRun) {
+              quote = 'Tristan Bemert'
+              this.firstRun = false
+            } else {
+              quote = _.sample(Words.quotes)
+              // this.wordIndex = (this.wordIndex < Words.quotes.length - 1 ? this.wordIndex + 1 : 0)
+              // quote = Words.quotes[this.wordIndex]
+            }
             const maxChars = p.width / FONT_SIZE
             if (quote.length < maxChars) {
               this.cloud.setText(quote, 300, () => {
@@ -708,89 +747,4 @@ export default {
   top: 0px;
 }
 
-#menuToggle {
-  font-size: 16px;
-  background-color: rgba(160, 160, 160, 0.75);
-  border: 2px solid black;
-  border-radius: 10px;
-  float: right;
-  margin-left: 10px;
-  height: 30px;
-}
-
-#menuToggle label {
-  display: block;
-  line-height: 30px;
-  padding: 0px 5px;
-}
-
-#menuToggle:hover {
-  background-color: white;
-}
-
-#menuContainer {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-#menu {
-  margin-bottom: 10px;
-  background-color: rgba(160, 160, 160, 0.75);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#playToggle {
-  display: inline-block;
-  border: 2px solid black;
-  float: right;
-  background-color: rgba(160, 160, 160, 0.75);
-  border-radius: 50%;
-  text-align: center;
-  height: 30px;
-  width: 30px;
-}
-
-#playToggle:hover {
-  background-color: white;
-}
-
-#playToggle label {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 30px;
-}
-
-#infoToggle,
-#fullscreenToggle {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.link > * {
-  cursor: pointer;
-  text-decoration: underline;
-  color: white;
-  font-family: arial;
-}
-
-.toggle input{
-  display: none;
-}
-
-.controls {
-  background-color: lightgrey;
-  margin-bottom: 10px;
-  font-size: 14px;
-  border-radius: 10px;
-  padding: 10px;
-  display: block;
-  width: 100%;
-}
-
-.controls:active {
-  background-color: white;
-}
 </style>
