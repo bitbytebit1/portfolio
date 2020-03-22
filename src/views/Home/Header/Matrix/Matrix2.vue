@@ -1,5 +1,5 @@
 <template>
-  <div id="container" />
+  <div id="lost-like-tears-in-the-rain" />
 </template>
 
 <script>
@@ -9,10 +9,10 @@ import _ from 'lodash'
 export default {
   mounted () {
     /*
-The inspiration for this visualisation comes from the example in the wikipedia article. All code is my own. @timiscoding
-
-https://en.wikipedia.org/wiki/Matrix_digital_rain
-*/
+      The inspiration for this visualisation comes from the example in the wikipedia article. All code is my own. @timiscoding
+      https://codepen.io/timiscoding/pen/RjgxoY
+      https://en.wikipedia.org/wiki/Matrix_digital_rain
+    */
 
     const s = (p) => {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
@@ -431,7 +431,7 @@ https://en.wikipedia.org/wiki/Matrix_digital_rain
         }
 
         static get quotes () {
-          return ['Tristan Bemert', 'Portfolio', 'BitByteBit', 'You never fall if you never fight', 'Perfection is achieved when there\'s nothing left to take away', 'This too shall pass']
+          return ['Tristan Bemert', 'Portfolio', 'BitByteBit', 'You never fall if you never fight', 'It happens faster than you could ever think',  'from always and forever to never again', 'in less than a blink.', 'and yet; this too shall pass']
         }
 
         draw () {
@@ -692,15 +692,15 @@ https://en.wikipedia.org/wiki/Matrix_digital_rain
     }
 
     const myp5 = new p5(s)
-    console.log(myp5)
   }
 }
 </script>
 
 <style>
-#container {
+#lost-like-tears-in-the-rain {
   position: relative;
   height: 150px;
+  background-color: black;
 }
 #mycanvas {
   position: absolute;
