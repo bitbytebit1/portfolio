@@ -427,7 +427,7 @@ export default {
           super({ cloud, time })
           this.newWord = true
           this.name = 'Words'
-          this.firstRun = false
+          this.firstRun = true
           // this.wordIndex = -1
         }
 
