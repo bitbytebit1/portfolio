@@ -22,6 +22,12 @@
       >
         <ProjectCard v-bind="cards.markdown" />
       </v-col>
+      <v-col
+        cols="12"
+        md="6"
+      >
+        <ProjectCard v-bind="cards.memer" />
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -56,6 +62,14 @@ export default {
           img: 'markdownit',
           description: 'Markdown-IT is a start-up located in Bergslagen.',
           website: 'https://markdownit.se',
+          source: '',
+          about: ''
+        },
+        memer: {
+          title: 'memeR',
+          img: 'memer',
+          description: 'Tinder for memes.',
+          website: 'https://memer.netlify.com/',
           source: '',
           about: ''
         }
