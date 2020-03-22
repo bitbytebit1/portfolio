@@ -61,7 +61,7 @@ https://en.wikipedia.org/wiki/Matrix_digital_rain
           }
         } else {
           width = p.windowWidth
-          height = p.windowHeight
+          height = 150
         }
         p.resizeCanvas(width, height)
 
