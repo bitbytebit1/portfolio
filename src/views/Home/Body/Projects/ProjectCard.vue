@@ -3,7 +3,10 @@
     v-ripple
     @click="animateIt"
   >
-    <v-img :src="require(`@/assets/${img}.png`)" />
+    <v-img
+      :src="require(`@/assets/${img}.png`)"
+      :lazy-src="require(`@/assets/${img}.png`)"
+    />
     <v-card-title primary-title>
       {{ title }}
     </v-card-title>
