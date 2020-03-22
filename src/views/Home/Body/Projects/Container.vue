@@ -54,7 +54,7 @@ export default {
         markdown: {
           title: 'Markdown-IT',
           img: 'markdownit',
-          description: 'Markdown-IT is a start-up located in Bergslagen that works with installations, development, troubleshooting and support.',
+          description: 'Markdown-IT is a start-up located in Bergslagen.',
           website: 'https://markdownit.se',
           source: '',
           about: ''
