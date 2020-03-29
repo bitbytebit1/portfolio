@@ -371,7 +371,7 @@ export default {
                 this.addRaindrop(col)
               }
             }
-            this.newRaindropTime = p.millis() + _.random(100, 300)
+            this.newRaindropTime = p.millis() + _.random(0, 10)
           }
         }
 

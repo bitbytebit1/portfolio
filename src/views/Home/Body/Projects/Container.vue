@@ -7,26 +7,10 @@
       <v-col
         cols="12"
         md="6"
+        v-for="(card, i) in cards"
+        :key="i"
       >
-        <ProjectCard v-bind="cards.dreamcloud" />
-      </v-col>
-      <v-col
-        cols="12"
-        md="6"
-      >
-        <ProjectCard v-bind="cards.spirals" />
-      </v-col>
-      <v-col
-        cols="12"
-        md="6"
-      >
-        <ProjectCard v-bind="cards.markdown" />
-      </v-col>
-      <v-col
-        cols="12"
-        md="6"
-      >
-        <ProjectCard v-bind="cards.memer" />
+        <ProjectCard v-bind="card" />
       </v-col>
     </v-row>
   </v-container>
@@ -40,8 +24,16 @@ export default {
   },
   data () {
     return {
-      cards: {
-        dreamcloud: {
+      cards: [
+        {
+          title: 'Super Combo Records',
+          img: 'scr2',
+          description: 'Headless e-commerce site built using Vue and Snipcart.',
+          website: 'https://supercomborecords.netlify.com',
+          source: '',
+          about: ''
+        },
+        {
           title: 'dreamcloud',
           img: 'dc',
           description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
@@ -49,15 +41,23 @@ export default {
           source: '',
           about: ''
         },
-        spirals: {
+        {
+          title: 'matrix',
+          img: 'matrix',
+          description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
+          website: '#/matrix',
+          source: '',
+          about: ''
+        },
+        {
           title: 'SpiralRealm',
           img: 'green',
-          description: 'Take a break and lose yourself in the spiral.',
+          description: 'Take a break and lose yourself in the spiral realm.',
           website: 'https://frosty-payne-c18919.netlify.com/',
           source: '',
           about: ''
         },
-        markdown: {
+        {
           title: 'Markdown-IT',
           img: 'markdownit',
           description: 'Markdown-IT is a start-up located in Bergslagen.',
@@ -65,7 +65,7 @@ export default {
           source: '',
           about: ''
         },
-        memer: {
+        {
           title: 'memeR',
           img: 'memer',
           description: 'Tinder for memes.',
@@ -73,7 +73,7 @@ export default {
           source: '',
           about: ''
         }
-      }
+      ]
     }
   }
 
