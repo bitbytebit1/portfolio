@@ -6,7 +6,7 @@
     <v-row>
       <v-col
         cols="12"
-        md="6"
+        md="12"
         v-for="(card, i) in cards"
         :key="i"
       >
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ProjectCard from './ProjectCard.vue'
+import ProjectCard from './ProjectParallax.vue'
 export default {
   components: {
     ProjectCard
