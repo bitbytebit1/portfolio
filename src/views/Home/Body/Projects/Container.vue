@@ -44,7 +44,7 @@ export default {
         {
           title: 'matrix',
           img: 'matrix',
-          description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
+          description: 'Did you see the girl in the red dress?',
           website: '#/matrix',
           source: '',
           about: ''
