@@ -9,7 +9,8 @@ module.exports = {
   ],
   rules: {
     'no-console': 'off',
-    'no-debugger': 'off'
+    'no-debugger': 'off',
+    'vue/array-bracket-spacing': 'error'
   },
   parserOptions: {
     parser: 'babel-eslint'
