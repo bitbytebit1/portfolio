@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ProjectCard from './ProjectParallax.vue'
+import ProjectCard from './ProjectCard.vue'
 export default {
   components: {
     ProjectCard
