@@ -30,7 +30,7 @@ export default {
           img: 'scr2',
           description: 'Headless e-commerce site built using Vue and Snipcart.',
           website: 'https://supercomborecords.netlify.com',
-          source: '',
+          source: 'https://github.com/bitbytebit1/Super-Combo-Record/',
           about: ''
         },
         {
@@ -38,7 +38,7 @@ export default {
           img: 'dc',
           description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
           website: 'https://dreamcloud.netlify.com',
-          source: '',
+          source: 'https://github.com/bitbytebit1/dreamcloud-vue/',
           about: ''
         },
         {
@@ -54,7 +54,7 @@ export default {
           img: 'green',
           description: 'Take a break and lose yourself in the spiral realm.',
           website: 'https://frosty-payne-c18919.netlify.com/',
-          source: '',
+          source: 'https://github.com/bitbytebit1/green-all-on-the-square/',
           about: ''
         },
         {
@@ -70,7 +70,7 @@ export default {
           img: 'memer',
           description: 'Tinder for memes.',
           website: 'https://memer.netlify.com/',
-          source: '',
+          source: 'https://github.com/bitbytebit1/memeR/',
           about: ''
         }
       ]
