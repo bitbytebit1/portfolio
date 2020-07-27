@@ -24,6 +24,7 @@
         Visit site
       </v-btn>
       <v-btn
+        v-if="source"
         :href="source"
         target="_blank"
         rel="noopener noreferrer"
@@ -32,6 +33,7 @@
         Source Code
       </v-btn>
       <v-btn
+        v-if="about"
         :href="about"
         target="_blank"
         rel="noopener noreferrer"
