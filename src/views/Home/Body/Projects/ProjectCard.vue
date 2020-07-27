@@ -18,18 +18,23 @@
         outlined
         :href="website"
         target="_blank"
+        rel="noopener noreferrer"
         :class="{'tada animated': animate}"
       >
         Visit site
       </v-btn>
       <v-btn
         :href="source"
+        target="_blank"
+        rel="noopener noreferrer"
         outlined
       >
         Source Code
       </v-btn>
       <v-btn
         :href="about"
+        target="_blank"
+        rel="noopener noreferrer"
         outlined
       >
         Read about
