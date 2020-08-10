@@ -28,7 +28,7 @@ export default {
         {
           title: 'Milltons ',
           img: 'milltons',
-          description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
+          description: 'Provides practical effective tools to help reduce, manage and track inflammatory and degenerative process in all its stages; guided by medical researchers specialized in their fields.',
           website: 'https://crp.milltons.com/',
           source: '',
           about: ''
