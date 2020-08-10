@@ -26,11 +26,11 @@ export default {
     return {
       cards: [
         {
-          title: 'Super Combo Records',
-          img: 'scr2',
-          description: 'Headless e-commerce site built using Vue and Snipcart.',
-          website: 'https://supercomborecords.netlify.com',
-          source: 'https://github.com/bitbytebit1/Super-Combo-Record/',
+          title: 'Milltons ',
+          img: 'milltons',
+          description: 'Make playlists with songs from Mixcloud, Soundcloud, YouTube and Vimeo.',
+          website: 'https://crp.milltons.com/',
+          source: '',
           about: ''
         },
         {
@@ -71,6 +71,14 @@ export default {
           description: 'Tinder for memes.',
           website: 'https://memer.netlify.com/',
           source: 'https://github.com/bitbytebit1/memeR/',
+          about: ''
+        },
+        {
+          title: 'Super Combo Records',
+          img: 'scr2',
+          description: 'Headless e-commerce site built using Vue and Snipcart.',
+          website: 'https://supercomborecords.netlify.com',
+          source: 'https://github.com/bitbytebit1/Super-Combo-Record/',
           about: ''
         }
       ]
